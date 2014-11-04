@@ -1,6 +1,15 @@
-See pics of the thing at: imgur.com/a/KoMG0
+See pictures of this project at: imgur.com/a/KoMG0
 
-Description of Bears Radio Modules:
+The Bears Radio is an adjustable audio delay box that is used to 
+listen to the Bears radio broadcast while watching the game on TV muted.
+The audio from the radio is piped through the box and delayed in
+fine increments before it is sent to the speakers.  The delay 
+resolution is as small as 1 millisecond and can be as long as
+43 seconds. There is an LCD to display the settings and an RF remote,
+so you can sit on the couch with your beverage while getting the 
+sound of Ed Hochuli's voice to sync up with the TV. 
+
+Description of Bears Radio VHDL Modules:
 
 radio_delay: top level
 
