@@ -1,0 +1,27 @@
+Description of Bears Radio Modules:
+
+radio_delay: top level
+
+audio_manager: middle man between I2S codec and SDRAM, 
+               tracks audio delay pointer
+
+sdram_controller: low-level SDRAM interface
+
+user_inputs: handles button presses and new RF packets
+
+lcd_controller: sends two rows of text to the LCD
+
+lcd_mux: selects between different possible screens that may be
+         displayed on the LCD
+
+i2c_comm: interface for configuring the Wolfson Audio Codec
+
+i2s_comm: audio data interface to the Codec
+
+nordic: packet state machine for the Nordic RF transceiver
+
+spi_read_payload: data interface to the Nordic RF transceiver
+
+spi_config: state machine to configure the Nordic RF transceiver
+
+
