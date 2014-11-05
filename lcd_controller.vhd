@@ -21,14 +21,11 @@ end lcd_controller;
 
 architecture Rayonnant_Gothic of lcd_controller is
 
---    constant row1_text: string := "What the fucking";
---    constant row2_text: string := "fuck?           ";
 
 	constant function_set : std_logic_vector (7 downto 0) := "00111000";
 	constant display_on: std_logic_vector (7 downto 0) := "00001100";
 	constant display_clr: std_logic_vector (7 downto 0) := "00000001";
 	constant entry_mode_set: std_logic_vector (7 downto 0) := "00000110";	
-	--constant return_home: std_logic_vector(7 downto 0) := "00000010";
 	
 	constant goto_line1 : std_logic_vector(7 downto 0) := "10000000";
     constant goto_line2 : std_logic_vector(7 downto 0) := "11000000";
@@ -62,25 +59,6 @@ architecture Rayonnant_Gothic of lcd_controller is
 begin
 	--lcd_on <= '1';  -- turn it on
 	backlight <= '1';
-
---    lcd_e <= '1';
---    lcd_rw <= '1';
---    lcd_rs <= '1';
---    lcd_data <= X"12";
---slow_it_down:
---	process(clk)
---		variable slow_count: integer range 0 to 15;
---	begin
---		if(rising_edge(clk)) then
---			if(slow_count = 0) then
---				ce <= '1';
---			else
---				ce <= '0';
---				slow_count := slow_count + 1;
---			end if;
---		end if;
---	end process;
-
 
 -- Initialization state machine
 init_state_machine:
